@@ -1,0 +1,25 @@
+#game-board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.card {
+  width: 50px;
+  height: 50px;
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.flipped {
+  transform: rotateY(180deg);
+}
+
+.hidden {
+  opacity: 0;
+}
